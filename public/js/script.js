@@ -13,7 +13,7 @@ const answers_no = {
         "You are now just being mean!",
         "Why are you doing this to me?",
         "Please give me a chance!",
-        "I am begging you to stop!",
+        "Tujhe hamare hone wale bacchon ki kasam",
         "Ok, Let's just start over.."
     ],
     french: [
@@ -53,9 +53,9 @@ const answers_no = {
 };
 
 answers_yes = {
-    "english": "Yes",
-    "french": "Oui",
-    "Thailand": "เย่ คืนดีกันแล้วน้า"
+    "english": "Yes! 💚",
+    "french": "Oui! 💚",
+    "thai": "เย่ คืนดีกันแล้วน้า 💚"
 }
 
 let language = "english"; // Default language is English
@@ -124,11 +124,11 @@ function changeLanguage() {
     // Update question heading
     const questionHeading = document.getElementById("question-heading");
     if (language === "french") {
-        questionHeading.textContent = "Tu veux être mon valentin?";
+        questionHeading.textContent = "💝 Tu veux être mon valentin? 💝";
     } else if (language === "thai") {
-        questionHeading.textContent = "คืนดีกับเราได้อ่ะป่าว?";
+        questionHeading.textContent = "💝 คืนดีกับเราได้อ่ะป่าว? 💝";
     } else {
-        questionHeading.textContent = "Will you be my valentine?";
+        questionHeading.textContent = "💝 Will you be my valentine? 💝";
     }
 
     // Reset yes button text
@@ -144,10 +144,10 @@ function changeLanguage() {
     // Update success message
     const successMessage = document.getElementById("success-message");
     if (language === "french") {
-        successMessage.textContent = "Yepppie, à bientôt :3";
+        successMessage.textContent = "🎉 Yepppie, à bientôt :3 🎉";
     } else if (language === "thai") {
-        successMessage.textContent = "ฮูเร่ คืนดีกันแล้วน้า :3";
+        successMessage.textContent = "🎉 ฮูเร่ คืนดีกันแล้วน้า :3 🎉";
     } else {
-        successMessage.textContent = "Yepppie, see you sooonnn :3";
+        successMessage.textContent = "🎉 Yepppie, see you sooonnn :3 🎉";
     }
 }
